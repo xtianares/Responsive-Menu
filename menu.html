@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Responsive Menu</title>
+	<meta name="description" content="" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.americansafetycouncil.com/favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Fjalla+One|Roboto+Slab:300,400,500,700" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/featherlight.css" />
+	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+<div class="container fluid">
+    <div class="col-sm-12">
+        <br />
+        <h1>Responsive Menu</h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="menu.html">Home</a></li>
+				<li><span class="submenu">Dropdown</span>
+					<ul class="submenu">
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item That is a Bit Too Long</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+					</ul>
+				</li>
+				<li><span class="submenu">Dropdown</span>
+					<ul class="submenu">
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+						<li><a href="#">Dropdown Item</a></li>
+					</ul>
+				</li>
+				<li><a href="#">About Us</a></li>
+				<li class="last"><a href="#">Contact Us</a></li>
+				<li class="right"><a href="#">Register Now</a></li>
+				<li class="onmobile"><a href="https://home.uceusa.com/StudentLogin.aspx?host=americansafetycouncil.com">Login</a></li>
+			</ul>
+		</nav><!-- end of #nav -->
+    </div>
+</div>
+
+<!--<script type="text/javascript" src="js/modernizr.js"></script>-->
+<!-- 2.x.x for modern browsers, 1.x.x for ".oldie" IE8 and below-->
+<script type="text/javascript">
+  var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+  if(!oldieCheck) { document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"><\/script>'); }
+  else { document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"><\/script>'); }
+
+/*(function() {
+    var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
+    if(!oldieCheck) { el.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"; }
+	else { el.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"; }
+    //var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
+    var s = document.getElementsByTagName('script'); s=s[s.length-1]; s.parentNode.insertBefore(el, s);
+})();*/
+</script>
+<script type="text/javascript">
+  if(!window.jQuery) {
+    if(!oldieCheck) { document.write('<script src="js/jquery-3.1.1.min.js"><\/script>'); }
+    else { document.write('<script src="js/jquery-1.12.4.min.js"><\/script>'); }
+  }
+</script>
+<script type="text/javascript" src="js/jquery.menu.js"></script>
+<script type="application/javascript" src="js/fastclick.js"></script>
+
+</body>
+</html>
