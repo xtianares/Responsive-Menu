@@ -2,24 +2,22 @@
 <!--[if lt IE 8 ]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]> <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-jQuery" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=1"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Responsive Menu</title>
-	<meta name="description" content="" />
-	<link rel="shortcut icon" type="image/x-icon" href="https://www.americansafetycouncil.com/favicon.ico" />
+	<meta name="description" content="Vanilla JS Responsive Menu" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.xtianares.com/images/favicon.png" />
 	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Fjalla+One|Roboto+Slab:300,400,500,700" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/featherlight.css" />
-	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="css/menu.css" />
 
 </head>
 
 <body>
 
-<div class="container fluid">
+<section class="container fluid">
     <div class="col-sm-12">
         <br />
         <h1>Responsive Menu</h1>
@@ -50,37 +48,27 @@
 					</ul>
 				</li>
 				<li><a href="#">About Us</a></li>
-				<li class="last"><a href="#">Contact Us</a></li>
-				<li class="right"><a href="#">Register Now</a></li>
-				<li class="onmobile"><a href="https://home.uceusa.com/StudentLogin.aspx?host=americansafetycouncil.com">Login</a></li>
+				<li class="last"><a href="#">Last Item</a></li>
+				<li class="right"><a href="#">Right Aligned</a></li>
+				<li class="onmobile"><a href="#">Only On Mobile</a></li>
 			</ul>
 		</nav><!-- end of #nav -->
     </div>
-</div>
+</section>
+<section class="container">
+    <div class="col-lg-12">
+        <h1>Main h1 Level Headline</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Aliquam sodales urna non odio egestas tempor nunc vel vehicula ante. Etiam bibendum iaculis libero</a>, eget molestie nisl pharetra in</p>
+        <blockquote>Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in, consectetur adipiscing elit.</blockquote>
+        <h2>Secondary h2 Level Headline</h2>
+        <p class="break_word">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Superlongtextthatshouldbebrokeninmobilewithcssbreakword.com.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra.</p>
+        <h3>Tertiary h3 Level Headline</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra.</p>
+	</div>
+</section>
 
-<!--<script type="text/javascript" src="js/modernizr.js"></script>-->
-<!-- 2.x.x for modern browsers, 1.x.x for ".oldie" IE8 and below-->
-<script type="text/javascript">
-  var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-  if(!oldieCheck) { document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"><\/script>'); }
-  else { document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"><\/script>'); }
-
-/*(function() {
-    var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
-    if(!oldieCheck) { el.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"; }
-	else { el.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"; }
-    //var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
-    var s = document.getElementsByTagName('script'); s=s[s.length-1]; s.parentNode.insertBefore(el, s);
-})();*/
-</script>
-<script type="text/javascript">
-  if(!window.jQuery) {
-    if(!oldieCheck) { document.write('<script src="js/jquery-3.1.1.min.js"><\/script>'); }
-    else { document.write('<script src="js/jquery-1.12.4.min.js"><\/script>'); }
-  }
-</script>
-<script type="text/javascript" src="js/jquery.menu.js"></script>
-<script type="application/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 
 </body>
 </html>

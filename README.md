@@ -1,4 +1,4 @@
 # Responsive Menu
-Another jQuery based responsive menu.
+Another ~~jQuery based~~ Vanilla JS Responsive Menu.
 
-*Need to add the icons*
+*Next thing to do, animate using transform instead of height to take advantage of GPU rendering*
