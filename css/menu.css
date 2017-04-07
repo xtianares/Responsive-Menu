@@ -657,9 +657,6 @@ dl dt { font-weight: bold; }
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 	transition: background 0.17s linear 0s;
 }
-#nav span.submenu {
-	border-bottom: 1px dotted #455a64;
-}
 #nav span.submenu:after {
     float: right;
     margin-left: 10px;
@@ -671,6 +668,9 @@ dl dt { font-weight: bold; }
     text-align: center;
     font-size: 105%;
     vertical-align: top;
+}
+#nav span.submenu.is-active {
+	border-bottom: 1px dotted #455a64;
 }
 #nav span.submenu.is-active:after {
     content: "\e816";

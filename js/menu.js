@@ -80,11 +80,27 @@ document.addEventListener('click', function(e) {
 	}
 }, false);
 
+/*
 window.addEventListener("resize", function () {
-	if ( menutoggle.offsetWidth > 0 && menutoggle.offsetHeight > 0 ) { // if the #menutoggle is visible
+    //if ( menutoggle.offsetWidth > 0 && menutoggle.offsetHeight > 0 ) { // if the #menutoggle is visible
+	//	hideMenu();
+	//}
+    if ( menutoggle.offsetWidth <= 0 && menutoggle.offsetHeight <=  0 ) { // if the #menutoggle is hidden
 		hideMenu();
 	}
 }, false);
+*/
+
+var resizeTimer;
+window.addEventListener("resize", function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+        if ( menutoggle.offsetWidth <= 0 && menutoggle.offsetHeight <=  0 ) { // if the #menutoggle is hidden
+    		hideMenu();
+    	}
+    }, 250);
+}, false);
+
 
 // Dropdown Select Toggle
 forEach(document.querySelectorAll(".dropdown_list span.dropdown"), function (index, value) {
